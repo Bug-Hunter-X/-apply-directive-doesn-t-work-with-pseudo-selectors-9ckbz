@@ -1,0 +1,7 @@
+This bug occurs when using Tailwind CSS's `@apply` directive with a class that contains a pseudo-selector, such as `:hover`.  The `@apply` directive doesn't correctly apply the styles associated with the pseudo-selector. For example:
+```css
+.my-button {
+  @apply bg-blue-500 hover:bg-blue-700;
+}
+```
+This might result in only the `bg-blue-500` class being applied, ignoring `hover:bg-blue-700`. 
