@@ -1,0 +1,7 @@
+This issue is worked around by applying the individual Tailwind CSS classes without using `@apply` with pseudo-selectors:
+```css
+.my-button {
+  bg-blue-500 hover:bg-blue-700;
+}
+```
+This directly applies the background color and the hover effect correctly.
